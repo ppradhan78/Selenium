@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/New folder
+/Publish
+/Selenium.MVC/bin
+/Selenium.MVC/obj
+/Selenium.MVC.SeleniumUITest/bin
+/Selenium.MVC.SeleniumUITest/obj
+/Selenium.MVC.Test/bin
+/Selenium.MVC.Test/obj
