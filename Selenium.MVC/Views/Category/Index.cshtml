@@ -25,23 +25,38 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CategoryID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CategoryName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new {   id=item.CategoryID   }) |
-                @Html.ActionLink("Details", "Details", new {  id=item.CategoryID  }) |
-                @Html.ActionLink("Delete", "Delete", new {   id=item.CategoryID   })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new {   id=item.CategoryID   }) |
+                    @Html.ActionLink("Details", "Details", new {  id=item.CategoryID  }) |
+                    @Html.ActionLink("Delete", "Delete", new {   id=item.CategoryID   })  |
+                    @Html.ActionLink("Popup", "Details", new {   id=item.CategoryID   }) |
+                    <input type="button" id="myModalContent" value="Alert" onclick="alert('Sample alter message');" />
+                       <input type="button" id="btnConform" value="Conform" onclick="myFunction();" />
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+<script>
+function myFunction() {
+  let text;
+  if (confirm("Press a button!") == true) {
+    alert("You pressed OK!");
+  } else {
+    alert("You canceled!");
+  }
+ 
+}
+</script>

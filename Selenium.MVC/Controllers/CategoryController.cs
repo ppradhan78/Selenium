@@ -23,7 +23,11 @@ namespace Selenium.MVC.Controllers
         {
             return View(_categoryCore.GetById(id));
         }
-
+        public ActionResult Popup(int id)
+        {
+            var data = _categoryCore.GetById(id);
+            return PartialView("_Popup", data);
+        }
         // GET: CategoryController/Create
         public ActionResult Create()
         {
