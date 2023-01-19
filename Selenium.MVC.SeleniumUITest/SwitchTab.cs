@@ -1,11 +1,4 @@
-using OpenQA.Selenium;
-using Xunit;
-using Xunit.Abstractions;
-using FluentAssertions;
-using System.Collections.ObjectModel;
-using OpenQA.Selenium.Support.UI;
 using Selenium.MVC.SeleniumUITest.Utlity;
-
 namespace Selenium.MVC.SeleniumUITest
 {
     //public class UnitTest1
@@ -34,7 +27,6 @@ namespace Selenium.MVC.SeleniumUITest
             _webDriverFixture = webDriverFixture;
         }
 
-
         [Fact]
         public void Category_Tab()
         {
@@ -48,8 +40,6 @@ namespace Selenium.MVC.SeleniumUITest
             string homeTab = allTab[0];
             Thread.Sleep(5000);
             driver.SwitchTo().Window(homeTab);
-
-
         }
 
         [Fact]

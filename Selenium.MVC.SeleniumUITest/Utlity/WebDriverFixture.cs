@@ -1,8 +1,4 @@
-﻿using OpenQA.Selenium.Chrome;
-using System;
-using WebDriverManager;
-using WebDriverManager.DriverConfigs.Impl;
-
+﻿
 namespace Selenium.MVC.SeleniumUITest
 {
     public class WebDriverFixture : IDisposable
@@ -15,8 +11,8 @@ namespace Selenium.MVC.SeleniumUITest
         }
         public void Dispose()
         {
-           // ChromeDriver.Quit();
-           // ChromeDriver.Dispose();
+            ChromeDriver.Quit();
+            ChromeDriver.Dispose();
         }
     }
 }

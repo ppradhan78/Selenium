@@ -1,7 +1,3 @@
-using OpenQA.Selenium;
-using Xunit;
-using Xunit.Abstractions;
-using FluentAssertions;
 using AutoFixture;
 using AutoFixture.Xunit2;
 
@@ -16,7 +12,6 @@ namespace Selenium.MVC.SeleniumUITest
         {
             _webDriverFixture = webDriverFixture;
         }
-
 
         [Fact]
         public void CreateCategoryFillData()
@@ -41,8 +36,6 @@ namespace Selenium.MVC.SeleniumUITest
         {
             var driver = _webDriverFixture.ChromeDriver;
             driver.Navigate().GoToUrl("http://localhost:88/");
-
-           
 
             driver.FindElement(By.LinkText("Category")).Click();
             driver.FindElement(By.LinkText("Create New")).Click();

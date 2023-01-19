@@ -1,7 +1,4 @@
-﻿using OpenQA.Selenium;
-using System.Collections.ObjectModel;
-
-namespace Selenium.MVC.SeleniumUITest.Utlity
+﻿namespace Selenium.MVC.SeleniumUITest.Utlity
 {
     public class PageObjectModels
     {

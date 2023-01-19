@@ -1,10 +1,7 @@
-using OpenQA.Selenium;
-using Xunit;
-using Xunit.Abstractions;
 using FluentAssertions;
 namespace Selenium.MVC.SeleniumUITest
 {
-    
+
     [Collection("Sequence")]
     public class CategoryUnitTestDatAFill : IClassFixture<WebDriverFixture>
     {
@@ -13,8 +10,6 @@ namespace Selenium.MVC.SeleniumUITest
         {
             _webDriverFixture = webDriverFixture;
         }
-
-
      
         //[Fact]
         [Theory]

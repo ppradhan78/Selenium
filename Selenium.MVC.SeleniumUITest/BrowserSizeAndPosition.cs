@@ -1,29 +1,5 @@
-using OpenQA.Selenium;
-using Xunit;
-using Xunit.Abstractions;
-using FluentAssertions;
-using System.Collections.ObjectModel;
-using OpenQA.Selenium.Support.UI;
-
 namespace Selenium.MVC.SeleniumUITest
 {
-    //public class UnitTest1
-    //{
-    //    private ChromeDriver chromeDriver;
-
-    //    public UnitTest1()
-    //    {
-    //        //driver
-    //        var driver = new DriverManager().SetUpDriver(new ChromeConfig());
-    //        chromeDriver = new ChromeDriver();
-    //    }
-    //    [Fact]
-    //    public void Test1()
-    //    {
-    //        chromeDriver.Navigate().GoToUrl("http://localhost:88/");
-
-    //    }
-    //}
     [Collection("Sequence")]
     public class BrowserSizeAndPosition : IClassFixture<WebDriverFixture>
     {
@@ -80,7 +56,6 @@ namespace Selenium.MVC.SeleniumUITest
 
             ////IWebElement dtRequired = driver.FindElement(By.Id("dtRequired"));
             ////CategoryName.SendKeys(Guid.NewGuid().ToString());
-
 
         }
     }
