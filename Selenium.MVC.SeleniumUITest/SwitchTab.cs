@@ -4,6 +4,7 @@ using Xunit.Abstractions;
 using FluentAssertions;
 using System.Collections.ObjectModel;
 using OpenQA.Selenium.Support.UI;
+using Selenium.MVC.SeleniumUITest.Utlity;
 
 namespace Selenium.MVC.SeleniumUITest
 {
@@ -40,6 +41,7 @@ namespace Selenium.MVC.SeleniumUITest
             string Home = "http://localhost:88/";
             var driver = _webDriverFixture.ChromeDriver;
             driver.Navigate().GoToUrl(Home);
+            new PageObjectModels(driver).NaigateTo();
             driver.FindElement(By.Id("Category")).Click();
 
             ReadOnlyCollection<string> allTab = driver.WindowHandles;
